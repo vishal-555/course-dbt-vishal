@@ -84,3 +84,59 @@ models:
         tests:
           - not_null
           - unique
+
+  - name: int_user_info
+    description: "User personal and address details"
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_user_info
+    description: "Dim table: User personal and address details"
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+
+  - name: int_user_orders
+    description: "User personal and order details"
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_user_orders
+    description: "User personal and order details"
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_user_orders_mark_question
+    description: "User personal and order details"
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+
+  - name: int_fact_page_views
+    description: "Event page view details"
+    columns:
+      - name: event_id
+        tests:
+          - not_null
+          - unique
+
+  - name: fact_page_views
+    description: "Event page view details"
+    columns:
+      - name: event_id
+        tests:
+          - not_null
+          - unique
