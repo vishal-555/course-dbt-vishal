@@ -1,0 +1,14 @@
+version: 2
+
+exposures:
+  - name: Product Funnel
+    description: >
+      User activity funnel
+    type: dashboard
+    maturity: medium
+
+    owner:
+      name: Vishal Waghmode
+      email: vishalwaghmode007@gmail.com
+    depends_on:
+      - ref('stg_events')

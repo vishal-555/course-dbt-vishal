@@ -35,10 +35,10 @@ models:
   my_new_project:
     # Config indicated by + and applies to all files under models/example/
     example:
-      +materialized: view
+      +materialized: tables
 
-  post-hook:
-    - "GRANT SELECT ON {{this}} TO reporting"
+#  post-hook:
+#    - "GRANT SELECT ON {{this}} TO reporting"
 
-on-run-end:
-  - "GRANT USAGE ON SCHEMA {{schema}} TO reporting"    
+#on-run-end:
+#  - "GRANT USAGE ON SCHEMA {{schema}} TO reporting"    
